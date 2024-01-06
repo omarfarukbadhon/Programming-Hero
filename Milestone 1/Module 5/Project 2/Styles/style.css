@@ -85,7 +85,7 @@ main {
     margin-bottom: 24px;
 }
 
-.previous-year-description .description{
+.previous-year-description .description {
     text-align: left;
     color: #444343;
     font-size: 16px;
@@ -95,84 +95,138 @@ main {
     margin-bottom: 24px;
 }
 
-.previous-year-description  ul li{
+.previous-year-description ul li {
     list-style: none;
 }
 
 
-.previous-year-description  ul li::before{
+.previous-year-description ul li::before {
     content: '✓';
     color: #16D887;
     font-size: 25px;
     margin-right: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* plan section style */
+
+.plan-section {
+    padding: 130px 0;
+}
+
+.plan-section .plan-title {
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.plan-section .to-do {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.plan-section .to-do-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-section .to-do-title {
+    color: #151414;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.plan-section .to-do-description {
+    color: #737272;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Call Now Section Style */
+
+.call-now {
+    background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0.00) 100%), url('../images/watch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.call-now div {
+    padding: 60px 65px;
+}
+
+.call-now .call-now-title {
+    width: 459px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.call-now button[type="button"] {
+    background: white;
+    color: #F15B22;
+}
+
+
+/* Footer section style */
+
+footer {
+    background-color: black;
+    padding: 130px 230px;
+}
+
+footer .footer-section {
+    display: flex;
+    gap: 330px;
+    color: white;
+}
+
+footer .future {
+    max-width: 485px;
+}
+
+footer .footer-title {
+    color: #F8F8F8;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+footer .social-media-icon {
+    display: flex;
+    gap: 30px;
+}
+
+footer .subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .subscribe {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+footer #text{
+    width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    padding: 22px;
+    background-color: black;
+    font-size: 18px;
+}
