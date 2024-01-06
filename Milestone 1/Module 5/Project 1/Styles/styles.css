@@ -39,6 +39,13 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
+    max-width: 830px;
+}
+
+section {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 130px;
 }
 
 /* Navbar Section design */
@@ -80,7 +87,7 @@ nav ul li {
 
 /* Header Section styles */
 
-.header section {
+.header .intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,7 +116,7 @@ nav ul li {
     max-width: 620px;
 }
 
-.header section img {
+.header .intro img {
     width: 584px;
     height: 676px;
     margin-bottom: -5px;
@@ -134,12 +141,10 @@ main {
 }
 
 .about-author {
-    margin: 0 auto;
     border-radius: 10px;
     background: #FFF8F3;
     padding: 130px 155px;
     align-items: center;
-    max-width: 1140px;
 }
 
 .about-author .author-details {
@@ -163,4 +168,32 @@ main {
     color: #474747;
     font-size: 20px;
     font-weight: 700;
+}
+
+/* What I do section style */
+
+.what-do .author-do {
+    display: flex;
+    justify-content: space-around;
+}
+
+.what-do .author-do div {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    max-width: 270px;
+    padding: 30px;
+}
+
+.what-do .author-do div .author-do-title {
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.what-do .author-do div .author-do-description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
 }
