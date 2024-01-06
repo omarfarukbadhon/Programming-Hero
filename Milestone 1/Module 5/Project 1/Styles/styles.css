@@ -197,3 +197,58 @@ main {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* .what-do{
+    background-color: #FFF8F3;
+} */
+
+
+/* Resume section style */
+
+.resume-section>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-section .two-resume-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-section-title {
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.resume-section .degree-info {
+    max-width: 510PX;
+}
+
+.resume-section .degree-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.institute {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.degree-description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+hr{
+    background: #D1D1D1;
+    height: 1px;
+    margin-bottom: 30px;
+}
