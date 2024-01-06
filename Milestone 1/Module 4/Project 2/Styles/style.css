@@ -59,6 +59,7 @@ nav .nav-section > ul{
 
 nav .nav-section > ul li{
     list-style: none;
+    transition: all 0.3s;
 }
 
 nav .nav-section > ul li a{
@@ -66,7 +67,6 @@ nav .nav-section > ul li a{
     font-size: 28px;
     color: #bbff9c;
     padding: 12px 18px;
-    transition: all 0.3s;
 }
 
 nav .nav-section > ul li a:hover{
@@ -121,7 +121,87 @@ header .header-body{
 }
 
 
+/* Main Section style */
 
+main{
+    padding: 130px 230px;
+}
 
+/* About section style */
 
+main .about-section{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
 
+main img{
+    border-radius: 10px;
+    box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.2);
+}
+
+main .tree-plantation-week-description{
+    padding: 30px 0 0 80px;
+}
+
+main h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+main .about-description{
+    /* max-width: 450px; */
+    font-size: 19px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Plant classification and price section style */
+
+main .plant-classification{
+    margin-top: 130px;
+    padding-bottom: 80px;
+}
+
+main .plant-classification h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+main .plant-classification .plant-price-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .plant-classification .price-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .plant-classification .price-section h3{
+    margin: 20px auto 10px;
+}
+
+main .plant-classification .price-section .price{
+    font-size: 20px;
+    margin: 0 auto 10px;
+}
+
+main .plant-classification h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 50px auto 10px;
+    text-align: center;
+    color: rgb(226, 43, 37);
+}
+
+span{
+    color: #2db428;
+    font-style: italic;
+    font-size: 25px;
+}
