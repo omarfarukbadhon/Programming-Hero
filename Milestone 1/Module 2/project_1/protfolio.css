@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 880px;
+    margin: 20px 10px 20px 80px;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-top: -60px;
+    margin-left: 15px;
+    margin-bottom: 35px;
+}
+
+.author-address{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.position{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.bx{
+    margin-right: 20px;
+    color: rgb(6, 139, 139);
+}
+
+hr{
+    width: 300px;
+    margin: 30px auto;
+    color: rgb(187, 187, 187);
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.logo-skill{
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.bxs-star{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.skills{
+    font-size: 25px;
+}
+
+.all-skills{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+.html{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.bottom{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px 80px 20px 20px;
+}
+
+.logo-work{
+    display: flex;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.bxs-briefcase{
+    font-size: 30px;
+    color: rgb(6, 139, 139);
+}
+
+.work{
+    font-size: 30px;
+}
+
+.job{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 15px 0 35px;
+    margin: 30px 15px 0 35px;
+}
+
+.last{
+    margin-bottom: 25px;
+}
+
+.font-end{
+    font-size: 25px;
+    color: rgb(85, 85, 85);
+}
+
+.duration{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bx-calendar{
+    margin-right: 8px;
+}
+
+span{
+    background-color: rgb(6, 139, 139);
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: white;
+}
+
+.lorem{
+    margin-top: 8px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.job-hr{
+    width: 900px;
+    margin: 30px auto 0;
+    color: rgb(187, 187, 187);
+}
+
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px 80px 20px 20px;
+}
+
+.logo-education{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px 20px 30px;
+}
+
+.varsity{
+    width: 1280px;
+    margin-left: 10px;
+}
+
+.kuet{
+   font-size: 20px;
+   margin-bottom: 15px; 
+}
+
+.degree{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.collage{
+    margin-top: 30px;
+}
+
+.footer{
+    height: 100px;
+    background-color: rgb(0, 102, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media{
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#icon{
+    font-size: 25px;
+    color: white;
+}
+

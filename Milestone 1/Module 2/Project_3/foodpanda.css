@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 6px 6px rgb(221, 221, 221);
+    background-color: white;
+}
+
+.logo{
+    margin: 15px 90px;
+    cursor: pointer;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    margin: 15px 90px;
+}
+
+input[type="button"]{
+    font-size: 18px;
+    padding: 5px 12px;
+    border: 1px solid #D60265;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform  0.2s;
+}
+
+input[type="button"]:hover{
+    transform: scale(1.1);
+}
+
+#log{
+    color: #D60265;
+}
+
+#sign{
+    color: white;
+    background-color: #D60265;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 35px;
+    padding: 5px 4px;
+    transition: 0.3s;
+}
+
+.language:hover{
+    background-color: #fdedf5;
+    border-radius: 10px;
+}
+
+#globe{
+    font-size: 22px;
+    margin-right: 6px;
+}
+
+.en{
+    padding-top: 2px;
+    margin-right: 6px;
+}
+
+#down{
+    font-size: 26px;
+    color: #D60265;
+}
+
+#bag{
+    font-size: 25px;
+    color: #D60265;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+}
+
+#bag:hover{
+    background-color: #fdedf5;
+    border-radius: 50%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+}
+
+.its-the-food{
+    font-size: 40px;
+}
+
+.search-section{
+    display: flex;
+    width: 750px;
+    background-color: white;
+    margin-left: 113px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 1px rgb(228, 228, 228);
+    padding: 12px;
+}
+
+#search-street{
+    width: 650px;
+    height: 50px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 8px 0 0 8px;
+    outline: 0 solid rgb(216, 216, 216);
+    border-right: none;
+    font-size: 16px;
+}
+
+#search-street::placeholder{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.location-icon{
+    display: flex;
+    margin-left: -130px;
+    width: 150px;
+    align-items: center;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 0 8px 8px 0;
+    outline: 0 solid rgb(216, 216, 216);
+    border-left: none;
+    color: #D60265;
+    cursor: pointer;
+}
+
+#current-location{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.locate-me{
+    font-size: 16px;
+}
+
+#find-food{
+    margin-left: 20px;
+    background-color: #D60265;
+    color: white;
+}
+
+.middle{
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 280px;
+}
+
+.you-prepare{
+    font-size: 35px;
+    margin-left: 190px;
+    margin-bottom: 25px;
+}
+
+.man-cooking{
+    height: 550px;
+    width: 1899px;
+    object-fit: cover;
+}
+
+.float{
+    padding: 25px 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0  15px 4px rgb(136, 136, 136);
+    width: 700px;
+    margin-left: 200px;
+    position: absolute;
+    top: 450px;
+}
+
+.list-your{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.would-you,
+.its-simple,
+.interested{
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+#get-started{
+    padding: 12px 10px;
+    color: white;
+    background-color: #D60265;
+}
+
+.location-gallery{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.find-us{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.image-gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-location-gallery{
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.dhaka{
+    margin-right: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+
+.dhaka:hover{
+    transform: scale(1.05);
+}
+
+.dhaka-text,
+.chittagong-text,
+.bagerhat-text,
+.bandarban-text{
+    position: absolute;
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 15px;
+    font-size: 17px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.dhaka-text{
+    left: 5px;
+}
+
+.chittagong-text{
+    left: 370px;
+}
+
+.bagerhat-text{
+    left: 735px;
+}
+
+.bandarban-text{
+    left: 1100px;
+}
+
+.foodpanda-app{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.put-us-in{
+    font-size: 35px;
+}
+
+.app-section{
+    display: flex;
+    margin-top: 40px;
+    background-color: #d83280;
+    border-radius: 25px;
+    width: 1450px;
+    height: 400px;
+}
+
+.right-app{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 60px;
+    margin-right: 220px;
+}
+
+.download-the{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.qr-code-text{
+    display: flex;
+    width: 450px;
+    margin-bottom: 45px;
+}
+
+.its-all-at{
+    color: white;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+.QR-image{
+    border:  1px solid white;
+    border-radius: 5px;
+}
+
+.QR-img{
+    padding: 8px 8px 5px 8px;
+}
+
+.app-store-foodpanda{
+    display: flex;
+}
+
+.apple-store{
+    display: flex;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.go-to-store{
+    display: flex;
+    flex-direction: column;
+}
+
+#apple{
+    color: white;
+    font-size: 28px;
+    margin-top: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.download-on-the{
+    color: white;
+    font-size: 10px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.app-store{
+    color: white;
+    font-size: 18px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.left-app{
+    margin-top: -100px;
+    /* margin-left: 180px; */
+}
+
+.business-tech{
+    height: 500px;
+    width: 1899px;
+    object-fit: cover;
+}
+
+.about-foodpanda{
+    margin-left: 190px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    margin-bottom: 150px;
+}
+
+.order-food{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.are-you{
+    color: gray;
+    margin-right: 420px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.more-about{
+    width: 1300px;
+    cursor: pointer;
+}
+
+.more-about:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.click-here{
+    padding: 20px 18px;
+    color: gray;
+}
+
+.social-media{
+    margin-left: 190px;
+}
+
+.hr{
+    width: 1450px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.bottom-logo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    margin-right: 1200px;
+}
+
+#social-media-icon{
+    font-size: 35px;
+    color: #d83280;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+#social-media-icon:hover{
+    color: #D60265;
+}
+
+footer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 190px;
+    display: flex;
+    margin-right: 180px;
+}
+
+.year{
+    color: gray;
+    width: 150px;
+    margin-right: 200px;
+}
+
+.important-link{
+    width: 380px;
+    margin-right: 50px;
+}
+
+a{
+    margin-right: 8px;
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover{
+    color: #d83280;
+}
+
+.hr{
+    margin-left: 190px;
+}
+
+.bottom{
+    margin-bottom: 100px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 190px;
+    color: gray;
+}
+
+.myanmar{
+    margin-right: 15px;
+}
+
+span{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
