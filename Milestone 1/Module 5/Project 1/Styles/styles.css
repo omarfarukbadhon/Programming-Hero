@@ -198,10 +198,6 @@ main {
     font-weight: 400;
 }
 
-/* .what-do{
-    background-color: #FFF8F3;
-} */
-
 
 /* Resume section style */
 
@@ -247,8 +243,67 @@ main {
     margin-bottom: 30px;
 }
 
-hr{
+hr {
     background: #D1D1D1;
     height: 1px;
     margin-bottom: 30px;
+}
+
+.resume-section .button{
+    margin-left: 470px;
+    margin-top: 25px;
+}
+
+.resume-section .section-title {
+    margin-bottom: 113px;
+}
+
+
+/* Footer section style */
+
+footer {
+    background-color: #FFF8F3;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    padding: 130px 0;
+}
+
+footer .two-footer-section {
+    max-width: 550px;
+}
+
+footer .section-title {
+    text-align: left;
+}
+
+footer .section-description {
+    text-align: left;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 25px;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+footer input[type="text"]{
+    height: 50px;
+}
+
+footer input[type="text"],
+textarea {
+    border-radius: 5px;
+    background: #FFF;
+    padding: 18px 30px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+footer input[type="submit"]{
+    width: 150px;
 }
