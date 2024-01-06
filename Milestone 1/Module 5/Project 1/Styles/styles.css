@@ -38,8 +38,8 @@
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 30px;
-    max-width: 830px;
+    margin-bottom: 50px;
+    max-width: 100%;
 }
 
 section {
@@ -145,6 +145,7 @@ main {
     background: #FFF8F3;
     padding: 130px 155px;
     align-items: center;
+    text-align: center;
 }
 
 .about-author .author-details {
@@ -171,6 +172,15 @@ main {
 }
 
 /* What I do section style */
+
+.what-do{
+    text-align: center;
+}
+
+.what-do .section-description{
+    padding: 0 155px;
+    margin-bottom: 50px;
+}
 
 .what-do .author-do {
     display: flex;
