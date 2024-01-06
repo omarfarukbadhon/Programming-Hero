@@ -51,17 +51,17 @@ nav img{
     justify-content: center;
 } */
 
-nav ul{
+nav .nav-section > ul{
     display: flex;
     gap: 60px;
     align-items: center;
 }
 
-nav ul li{
+nav .nav-section > ul li{
     list-style: none;
 }
 
-nav ul li a{
+nav .nav-section > ul li a{
     text-decoration: none;
     font-size: 28px;
     color: #bbff9c;
@@ -69,12 +69,29 @@ nav ul li a{
     transition: all 0.3s;
 }
 
-nav ul li a:hover{
+nav .nav-section > ul li a:hover{
     background-color: #355E3B;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 28px;
     color: #BCB88A;
+}
+
+nav .different-plant li{
+    margin-top: 15px;
+}
+
+nav .different-plant{
+    display: none;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+nav li:hover .different-plant{
+    display: block;
+}
+
+nav .different-plant .plant-sell a{
+    font-size: 23px;
 }
 
 /* Header title section */
