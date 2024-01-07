@@ -49,6 +49,7 @@ a{
 
 nav img{
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* nav .nav-section{
@@ -141,17 +142,17 @@ main h1{
     margin-bottom: 50px;
 }
 
+main img{
+    border-radius: 10px;
+    box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* About section style */
 
 main .about-section{
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-}
-
-main img{
-    border-radius: 10px;
-    box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.2);
 }
 
 main .tree-plantation-week-description{

@@ -36,7 +36,7 @@ header{
     background-image: url('../Images/AloeveraPage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px 180px 400px;
+    padding: 30px 180px 100px;
 }
 
 /* Navbar Styles */
@@ -44,7 +44,7 @@ header{
 header nav{
     display: flex;
     align-items: center;
-    margin: 20px auto 500px;
+    margin: 20px auto 50px;
 }
 
 nav button a{
@@ -53,4 +53,70 @@ nav button a{
 
 nav button:hover a{
     color: #BCB88A;
+}
+
+/* plant price Section style */
+
+
+header h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #88ff51;
+}
+
+header img{
+    border-radius: 10px;
+    box-shadow: 0 0 18px 5px rgba(41, 255, 59, 0.2);
+}
+
+header .plant-classification{
+    padding-bottom: 80px;
+}
+
+header .plant-classification .plant-price-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+header .plant-classification .price-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .plant-classification .price-section h3{
+    margin: 20px auto 10px;
+    color: #88ff51;
+}
+
+header .plant-classification .price-section .price{
+    font-size: 20px;
+    margin: 0 auto 10px;
+    color: #88ff51;
+}
+
+header .plant-classification .price-section a{
+    color: #8A9A5B;
+}
+
+header .plant-classification .price-section button:hover a{
+    color: #BCB88A;
+}
+
+header .plant-classification h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 50px auto 10px;
+    text-align: center;
+    color: rgb(131, 228, 118);
+}
+
+span{
+    color: #ff0000;
+    font-style: italic;
+    font-size: 25px;
 }
