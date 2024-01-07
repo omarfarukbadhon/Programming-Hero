@@ -35,10 +35,9 @@ button[type="button"] {
 .header {
     background-image: url('../images/banner/banner1.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-position: center;
     padding: 218px 230px 166px 1145px;
-    background-color: rgb(241, 241, 241);
 }
 
 .header div {
