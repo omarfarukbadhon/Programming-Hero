@@ -225,7 +225,7 @@ span{
 
 main .previous-work{
     margin-top: 50px;
-    padding-bottom: 80px;
+
 }
 
 .previous-work .work-gallery{
@@ -249,6 +249,7 @@ main .previous-work{
     background-image: url('../Images/slide\ 1.jpg');
     background-repeat: no-repeat;
     background-size: 250px 360px;
+    transition: all 0.5s;
 }
 
 .previous-work .work-gallery .image1:hover{
@@ -260,6 +261,7 @@ main .previous-work{
     background-image: url('../Images/slide\ 2.jpg');
     background-repeat: no-repeat;
     background-size: 250px 360px;
+    transition: all 0.5s;
 }
 
 .previous-work .work-gallery .image2:hover{
@@ -271,6 +273,7 @@ main .previous-work{
     background-image: url('../Images/slide\ 3.jpg');
     background-repeat: no-repeat;
     background-size: 250px 360px;
+    transition: all 0.5s;
 }
 
 .previous-work .work-gallery .image3:hover{
@@ -282,6 +285,7 @@ main .previous-work{
     background-image: url('../Images/slide\ 4.jpg');
     background-repeat: no-repeat;
     background-size: 250px 360px;
+    transition: all 0.5s;
 }
 
 
@@ -295,10 +299,73 @@ main .previous-work{
     color: white;
 }
 
+/* Footer section Style */
+
+footer {
+    background-color: #355E3B;
+    padding: 80px 0;
+}
+
+footer .footer-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h2{
+    color: #88ff51;
+    font-size: 28px;
+}
+
+footer p{
+    color: wheat;
+    font-size: 22px;
+    line-height: 34px;
+    margin: 8px 0;
+}
 
 
+footer .social-media {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
 
+footer form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
 
+footer input[type="text"]{
+    height: 50px;
+}
+
+footer input[type="text"],
+textarea {
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 18px 30px;
+    margin-bottom: 24px;
+    border: 1px solid #88ff51;
+    outline: #355E3B;
+}
+
+footer input[type="submit"]{
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #88ff51;
+    padding: 12px 20px;
+    width: 150px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #8A9A5B;
+    transition: all 0.3s;
+}
+
+footer input[type="submit"]:hover{
+    background-color: #449150;
+    color: #84e26c;
+}
 
 
 
