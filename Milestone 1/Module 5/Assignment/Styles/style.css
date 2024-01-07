@@ -10,6 +10,19 @@
 
 /* Common element style */
 
+button {
+    border-radius: 8px;
+    background: #F00;
+    padding: 16px 32px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background: rgb(255, 73, 73);
+}
 
 /* Header section Style */
 
@@ -87,4 +100,44 @@ h3 {
     width: 800px;
     height: 500px;
     align-items: center;
+}
+
+/* Welcome section style */
+
+.welcome-section {
+    padding: 120px 140px;
+}
+
+.welcome-section>div {
+    display: flex;
+    gap: 40px;
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../Images/Vector.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 66px 138px;
+    border-radius: 16px;
+}
+
+.welcome-section .join-now {
+    padding: 66px 0 76px;
+}
+
+.welcome-section .join-now h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+    width: 642px;
+    text-align: left;
+}
+
+.welcome-section .join-now p {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 700px;
 }
