@@ -20,7 +20,7 @@ button {
     transition: all 0.3s;
 }
 
-button:hover{
+button:hover {
     background: rgb(255, 73, 73);
 }
 
@@ -144,11 +144,11 @@ h3 {
 
 /* party location section style */
 
-.party-location{
+.party-location {
     padding: 0 140px;
 }
 
-.party-location div{
+.party-location div {
     background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
     padding: 100px 385px;
     display: flex;
@@ -157,7 +157,7 @@ h3 {
     justify-content: center;
 }
 
-.party-location p{
+.party-location p {
     font-size: 32px;
     font-weight: 600;
     text-align: center;
@@ -165,10 +165,78 @@ h3 {
     margin-bottom: 10px;
 }
 
-.party-location span{
+.party-location span {
     color: #F00;
 }
 
-.party-location .button{
+.party-location .button {
     margin-top: 20px;
+}
+
+/* Up coming offer section style */
+
+.up-coming-offer {
+    padding: 100px 140px;
+    display: flex;
+    gap: 70px;
+}
+
+.up-coming-offer .offer {
+    padding-top: 100px;
+}
+
+.up-coming-offer .offer h1,
+h3,
+p {
+    text-align: left;
+}
+
+.up-coming-offer .left h3 {
+    color: #F00;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.up-coming-offer .left h1 {
+    color: #070211;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px auto;
+}
+
+.up-coming-offer p {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 390px;
+    text-align: justify;
+}
+
+.up-coming-offer .right h1 {
+    color: #F00;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.up-coming-offer .right p{
+    margin: 10px auto 38px;
+}
+
+.up-coming-offer .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 15px solid #F00;
+    width: 100%;
+    height: 100%;
+    border-radius: 463px;
+    padding: 25px;
+} 
+
+.up-coming-offer .image img{
+    width: 365px;
+    height: 365px;
+    border-radius: 365px;
 }
