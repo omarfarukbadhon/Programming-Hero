@@ -13,6 +13,7 @@ button{
     border-radius: 5px;
     font-size: 22px;
     align-items: center;
+    cursor: pointer;
     color: #8A9A5B;
     transition: all 0.3s;
 }
@@ -20,6 +21,11 @@ button{
 button:hover{
     background-color: #355E3B;
     color: #BCB88A;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -67,6 +73,7 @@ nav .nav-section > ul li a{
     font-size: 28px;
     color: #bbff9c;
     padding: 12px 18px;
+    transition: all 0.3s;
 }
 
 nav .nav-section > ul li a:hover{
@@ -127,6 +134,13 @@ main{
     padding: 130px 230px;
 }
 
+main h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
 /* About section style */
 
 main .about-section{
@@ -164,13 +178,6 @@ main .plant-classification{
     padding-bottom: 80px;
 }
 
-main .plant-classification h1{
-    font-size: 40px;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 50px;
-}
-
 main .plant-classification .plant-price-details{
     display: flex;
     align-items: center;
@@ -192,6 +199,14 @@ main .plant-classification .price-section .price{
     margin: 0 auto 10px;
 }
 
+main .plant-classification .price-section a{
+    color: #8A9A5B;
+}
+
+main .plant-classification .price-section button:hover a{
+    color: #BCB88A;
+}
+
 main .plant-classification h2{
     font-size: 22px;
     font-weight: 500;
@@ -205,3 +220,108 @@ span{
     font-style: italic;
     font-size: 25px;
 }
+
+/* Previous work section style */
+
+main .previous-work{
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.previous-work .work-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.previous-work .work-gallery .work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px 10px rgba(0, 0, 0, 0.2);
+}
+
+.previous-work .work-gallery .image1{
+    background-image: url('../Images/slide\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 360px;
+}
+
+.previous-work .work-gallery .image1:hover{
+    background-image: linear-gradient(90deg, #2db428 0%, rgba(241, 91, 34, 0.00) 100%), url('../Images/slide\ 1.jpg');
+}
+
+
+.previous-work .work-gallery .image2{
+    background-image: url('../Images/slide\ 2.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 360px;
+}
+
+.previous-work .work-gallery .image2:hover{
+    background-image: linear-gradient(90deg, #2db428 0%, rgba(241, 91, 34, 0.00) 100%), url('../Images/slide\ 2.jpg');
+}
+
+
+.previous-work .work-gallery .image3{
+    background-image: url('../Images/slide\ 3.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 360px;
+}
+
+.previous-work .work-gallery .image3:hover{
+    background-image: linear-gradient(90deg, #2db428 0%, rgba(241, 91, 34, 0.00) 100%), url('../Images/slide\ 3.jpg');
+}
+
+
+.previous-work .work-gallery .image4{
+    background-image: url('../Images/slide\ 4.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 360px;
+}
+
+
+.previous-work .work-gallery .image4:hover{
+    background-image: linear-gradient(90deg, #2db428 0%, rgba(241, 91, 34, 0.00) 100%), url('../Images/slide\ 4.jpg');
+}
+
+
+.previous-work .work-gallery h3{
+    font-size: 35px;
+    color: white;
+}
+
+/* .previous-work .work-gallery div:hover h3{
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 5.5%;
+    font-size: 35px;
+    color: white;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
