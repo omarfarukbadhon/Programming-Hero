@@ -1,8 +1,8 @@
 /* font family import link */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
-
-*{
+/* This style apply all section */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Merriweather', serif;
@@ -13,11 +13,11 @@
 
 /* Header section Style */
 
-header{
+header {
     padding: 50px 240px;
 }
 
-header .header{
+header .header {
     justify-content: center;
     background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../Images/Banner\ Image.png');
     background-repeat: no-repeat;
@@ -26,24 +26,65 @@ header .header{
     border-radius: 16px;
 }
 
-header h5, h1{
+header h5,
+h1 {
     color: white;
-}
-
-header h5{
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-align: center
-}
-
-header h1{
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 95px;
     text-align: center;
 }
 
+header h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+}
 
 
+/* Main Section style */
 
+main {
+    padding: 50px 140px;
+}
+
+/* Discount section style */
+
+.discount-section {
+    padding: 0 400px;
+}
+
+.discount-section h1,
+h5,
+h3 {
+    color: #F00;
+    text-align: center;
+}
+
+.discount-section h1 {
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.discount-section h5 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.discount-section h3 {
+    color: #070211;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.discount-section img {
+    width: 800px;
+    height: 500px;
+    align-items: center;
+}
