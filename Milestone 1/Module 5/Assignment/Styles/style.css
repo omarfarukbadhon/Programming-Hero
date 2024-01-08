@@ -283,4 +283,26 @@ p {
     padding: 0 150px;
 }
 
+.holidays-offer .bottom .lady{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
 
+.holidays-offer .bottom .discount{
+    position: absolute;
+    top: 80px;
+    right: 275px;
+}
+
+.holidays-offer .bottom .bottom-image{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.holidays-offer .bottom .box{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+}
