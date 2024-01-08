@@ -71,8 +71,7 @@ main {
 }
 
 .discount-section h1,
-h5,
-h3 {
+h5 {
     color: #F00;
     text-align: center;
 }
@@ -94,6 +93,7 @@ h3 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .discount-section img {
@@ -219,11 +219,11 @@ p {
     font-weight: 700;
 }
 
-.up-coming-offer .right p{
+.up-coming-offer .right p {
     margin: 10px auto 38px;
 }
 
-.up-coming-offer .image{
+.up-coming-offer .image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,10 +233,54 @@ p {
     height: 100%;
     border-radius: 463px;
     padding: 25px;
-} 
+}
 
-.up-coming-offer .image img{
+.up-coming-offer .image img {
     width: 365px;
     height: 365px;
     border-radius: 365px;
 }
+
+/* Holiday Offer section styles */
+
+.holidays-offer {
+    padding: 100px 140px;
+}
+
+.holidays-offer .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.holidays-offer .top h4 {
+    color: #070211;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.holidays-offer .top h1 {
+    color: #070211;
+    font-size: 72px;
+    font-weight: 900;
+    margin: 16px auto 28px;
+}
+
+.holidays-offer span {
+    color: #F00;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.holidays-offer .top p {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 0 150px;
+}
+
+
