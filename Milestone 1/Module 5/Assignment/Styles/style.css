@@ -48,22 +48,20 @@ header .header {
     border-radius: 16px;
 }
 
-header h5,
-h1 {
-    color: white;
-    text-align: center;
-}
-
 header h5 {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
+    text-align: center;
+    color: white;
 }
 
 header h1 {
     font-size: 72px;
     font-weight: 900;
     line-height: 95px;
+    text-align: center;
+    color: white;
 }
 
 
@@ -157,7 +155,7 @@ h5 {
     padding: 0 140px;
 }
 
-.party-location>div{
+.party-location>div {
     padding: 100px 385px;
 }
 
@@ -359,7 +357,7 @@ p {
     padding: 0 140px;
 }
 
-.subscription>div{
+.subscription>div {
     padding: 80px 212px;
 }
 
@@ -405,6 +403,53 @@ p {
     transition: all 0.3s;
 }
 
-.subscription input[type="button"]:hover{
+.subscription input[type="button"]:hover {
     background: rgb(255, 103, 103);
+}
+
+/* Footer Section style */
+
+footer>div {
+    padding: 120px 240px 50px;
+    background-color: black;
+    color: white;
+}
+
+footer .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-section .address {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    width: 375px;
+}
+
+.footer-section .icon{
+    display: flex;
+    gap: 10px;
+    padding-right: 230px;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin-bottom: 35px;
+    border: 1px solid rgb(26, 25, 25);
+}
+
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+footer button{
+    background-color: black;
 }
