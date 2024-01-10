@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One</title>
+    <style>
+        .container{
+            border: 1px solid salmon;
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .image-container{
+            border: 1px solid turquoise;
+            padding: 15px;
+        }
+
+        .image-container .img-one{
+            max-width: 100%;
+        }
+
+        /* Small device */
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+
+            h1{
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="Images/Rocket 1.jpg" alt="" class="img-one">
+            <h1>SpaceX Rocket</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis quas ab nemo laboriosam non repellat. Libero ab illum possimus.</p>
+        </div>
+        <div class="image-container">
+            <img src="Images/Rocket 1.jpg" alt="" class="img-one">
+            <h1>NASA Rocket</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis quas ab nemo laboriosam non repellat. Libero ab illum possimus.</p>
+        </div>
+    </div>
+</body>
+</html>
