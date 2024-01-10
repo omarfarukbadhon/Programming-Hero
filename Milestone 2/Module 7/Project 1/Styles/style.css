@@ -6,12 +6,6 @@
 
 /* Header section style */
 
-header{
-    background-image: url('../Images/nasa.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Navbar Section style */
 
 header nav{
@@ -85,4 +79,56 @@ nav .icon:hover{
 
 nav .icon:hover i{
     color: black;
+}
+
+/* header background section style */
+
+header .background{
+    background-image: url('../Images/nasa.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60rem;
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.background h2{
+    font-size: 3rem;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.background p{
+    font-size: 1.5em;
+    color: white;
+    padding: 15px 200px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .background p{
+        display: none;
+    }
+
+    .background h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav{
+        display: none;
+    }
+
+    header .background{
+        margin-top: 0;
+    }
+
+    .background h2{
+        margin-top: 80px;
+    }
 }
