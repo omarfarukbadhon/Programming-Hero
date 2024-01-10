@@ -115,20 +115,21 @@ header .background{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 5% 0;
+    padding: 100px 0;
 }
 
 .about h1{
     font-size: 3rem;
     letter-spacing: 10px;
+    text-align: center;
 }
 
 .about h4{
     font-size: 1rem;
     color: gray;
     font-style: italic;
-    margin: 18px auto;
+    margin: 18px 0;
+    text-align: center;
 }
 
 .about p{
@@ -136,7 +137,7 @@ header .background{
     text-align: justify;
     line-height: 2em;
     margin-bottom: 35px;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .about .space-agency{
@@ -145,7 +146,7 @@ header .background{
     gap: 20px;
     align-items: center;
     justify-content: center;
-    max-width: 45%;
+    max-width: 60%;
 }
 
 .about .space-agency div{
@@ -165,7 +166,7 @@ header .background{
     max-width: 100%;
 }
 
-
+/* Responsive section */
 
 @media screen and (max-width: 900px) {
     .background p{
@@ -190,3 +191,11 @@ header .background{
         margin-top: 80px;
     }
 }
+
+@media screen and (max-width: 950px) {
+    .about .space-agency{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
