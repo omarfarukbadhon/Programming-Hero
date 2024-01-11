@@ -1,0 +1,113 @@
+/* font Family export from google font */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+
+/* for all element style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Section style */
+section{
+    background-image: url('../Images/bg-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 50%;
+    margin: 100px auto;
+}
+
+/* Header section style */
+header{
+    padding: 15px 40px;
+}
+
+/* Main section style */
+
+main{
+    padding-bottom: 50px;
+}
+
+.header-content{
+    margin-bottom: 50px;
+}
+
+main h1, p{
+    text-align: center;
+    color: white;
+    max-width: 38%;
+    margin: 0 auto;
+}
+
+main h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+main p{
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+form{
+    background-color: rgba(248, 250, 252, 0.2);
+    padding: 25px;
+    max-width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+form p{
+    color: white;
+    text-align: left;
+    max-width: 100%;
+}
+
+.input, .option{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.textarea, .button{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"]{
+    width: 90%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+select{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+textarea{
+    width: 95%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: #4036A9;
+}
