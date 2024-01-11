@@ -159,9 +159,21 @@ section{
 
 }
 
-@media screen and (max-width: 1049) {
+@media screen and (max-width: 1049px) {
     section{
-        grid-template-rows: repeat(1, 1fr);
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right .one{
+        margin-left: 10%;
+        margin-bottom: 40px;
+    }
+    .right .two{
+        margin-right: 10%;
+    }
+    .right{
+        display: block;
     }
 }
 
