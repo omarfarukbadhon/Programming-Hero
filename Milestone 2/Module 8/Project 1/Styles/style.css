@@ -81,7 +81,7 @@ form p{
 }
 
 input[type="text"], input[type="email"]{
-    max-width: 100%;
+    width: 90%;
     padding: 15px;
     border-radius: 15px;
     border: none;
@@ -89,7 +89,7 @@ input[type="text"], input[type="email"]{
 }
 
 select{
-    max-width: 100%;
+    width: 100%;
     padding: 15px;
     border-radius: 15px;
     border: none;
@@ -97,7 +97,7 @@ select{
 }
 
 textarea{
-    max-width: 100%;
+    width: 95%;
     padding: 15px;
     border-radius: 15px;
     border: none;
