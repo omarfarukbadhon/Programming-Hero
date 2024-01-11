@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+            gap: 20px;
+        }
+        .box{
+            padding: 12px;
+            background-color: gray;
+        }
+
+        .one{
+            grid-row: span 5;
+        }
+
+        .eleven, .twelve{
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Template</h1>
+    <div class="container">
+        <div class="box one">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 6</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+        <div class="box">box 9</div>
+        <div class="box">box 10</div>
+        <div class="box eleven">box 11</div>
+        <div class="box twelve">box 12</div>
+    </div>
+</body>
+</html>
