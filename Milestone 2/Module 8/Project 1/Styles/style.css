@@ -15,7 +15,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    max-width: 50%;
+    max-width: 70%;
     margin: 100px auto;
 }
 
@@ -111,3 +111,65 @@ input[type="button"]{
     border: none;
     color: #4036A9;
 }
+
+/* @media screen and (min-width: 1600px) {
+    section{
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    section{
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    section{
+        max-width: 90%;
+    }
+} */
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    section{
+        max-width: 80%;
+    }
+    form{
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    section{
+        max-width: 90%;
+    }
+    form{
+        max-width: 85%;
+    }
+    main h1, p{
+        max-width: 60%;
+    }
+    header{
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section{
+        max-width: 95%;
+    }
+    form{
+        max-width: 80%;
+    }
+    .input, .option{
+        display: flex;
+        flex-direction: column;
+    }
+    main h1, p{
+        max-width: 80%;
+    }
+    header{
+        padding: 15px 25px;
+    }
+}
+
