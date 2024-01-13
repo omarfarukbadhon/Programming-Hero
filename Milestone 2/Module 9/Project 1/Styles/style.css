@@ -279,6 +279,35 @@ nav li a {
     font-weight: 600;
 }
 
+/* Sponsors section style */
+
+.sponsors{
+    margin: 6rem auto;
+    width: 80%;
+    text-align: center;
+}
+
+.sponsors h1{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.sponsors p{
+    color: #727272;
+    margin: 1.5rem auto;
+    line-height: 26px;
+    width: 40%;
+}
+
+.sponsors .all-sponsors{
+     display: flex;
+     gap: 4rem;
+     align-items: center;
+     margin-top: 2rem;
+     justify-content: center;
+}
+
 
 /* responsive for mobile devices */
 
