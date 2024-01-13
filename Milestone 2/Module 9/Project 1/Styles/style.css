@@ -253,9 +253,8 @@ nav li a {
 }
 
 .facts .card-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2.5rem;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -395,7 +394,8 @@ footer {
     }
 
     .facts .card-container {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        gap: 2.5rem;
     }
 
     .facts .facts-content {
@@ -478,7 +478,8 @@ footer {
     }
 
     .facts .card-container {
-        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+        gap: 2.5rem;
     }
 
     .facts .facts-content {
