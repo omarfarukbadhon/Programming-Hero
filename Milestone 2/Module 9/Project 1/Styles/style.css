@@ -354,6 +354,12 @@ nav li a {
     .features-image p {
         font-size: 1.2rem;
     }
+    .facts .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .facts .facts-content {
+        width: 90%;
+    }
 }
 
 /* responsive for medium devices */
