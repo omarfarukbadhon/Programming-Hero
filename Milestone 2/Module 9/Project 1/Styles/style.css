@@ -225,8 +225,6 @@ nav li a {
     color: white;
 }
 
-
-
 /* responsive for mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -276,6 +274,31 @@ nav li a {
     .group-image img {
         width: 100%;
     }
+
+    .features-enjoy {
+        flex-direction: column-reverse;
+        gap: 5.1rem;
+        margin: 2.2rem auto;
+        width: 90%;
+    }
+
+    .features-image img{
+        width: 100%;
+    }
+
+    .features-image .ten-years{
+        position: static;
+        margin: 1.2rem auto;
+        padding: 1.5rem;
+    }
+
+    .features-image a{
+        font-size: 2.8rem;
+    }
+    
+    .features-image p{
+        font-size: 1.2rem;
+    }
 }
 
 /* responsive for medium devices */
@@ -321,5 +344,11 @@ nav li a {
 
     .group-image img {
         width: 100%;
+    }
+    .features-enjoy {
+        flex-direction: column-reverse;
+        gap: 5.1rem;
+        margin: 2.2rem auto;
+        width: 70%;
     }
 }
