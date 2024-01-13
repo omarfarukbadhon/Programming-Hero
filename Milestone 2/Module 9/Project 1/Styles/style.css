@@ -21,11 +21,11 @@
     transition: all 0.5s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #d37000;
 }
 
-.btn-primary a{
+.btn-primary a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
@@ -100,19 +100,19 @@ nav li a {
     margin: 0 auto;
 }
 
-.header-container p{
+.header-container p {
     color: #727272;
     width: 45%;
     margin: 2rem auto;
 }
 
-.header-container img{
+.header-container img {
     width: 100%;
 }
 
 /* Team work section style */
 
-.team-work{
+.team-work {
     display: flex;
     gap: 4.6rem;
     margin: 5.2rem auto;
@@ -120,35 +120,34 @@ nav li a {
     align-items: center;
 }
 
-.team-work .group-image{
+.team-work .group-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.team-work .work-description h1{
+.team-work .work-description h1 {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-.work-description .quick{
+.work-description .quick {
     color: #727272;
     font-size: 2.8rem;
     font-weight: 500;
 }
 
-.work-description .features{
+.work-description .features {
     color: #FF900E;
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-.work-description p{
+.work-description p {
     color: #727272;
     margin: 1.5rem auto;
 }
-
 
 
 /* responsive for mobile devices */
@@ -165,22 +164,40 @@ nav li a {
     header nav {
         flex-direction: column;
     }
+
     header nav ul {
         gap: 1rem;
     }
+
     nav li {
         padding: 1.2rem 0.5rem;
     }
+
     .header-container .title {
         font-size: 1.5rem;
         width: 60%;
     }
-    .header-container p{
+
+    .header-container p {
         width: 90%;
         margin: 1rem auto;
     }
+
     .header-container {
         margin: 20px auto;
+    }
+
+    /* Team work section style */
+
+    .team-work {
+        flex-direction: column;
+        gap: 2.6rem;
+        margin: 3.2rem auto;
+        width: 90%;
+    }
+
+    .group-image img{
+        width: 100%;
     }
 }
 
@@ -197,18 +214,33 @@ nav li a {
     header nav ul {
         gap: 2rem;
     }
+
     nav h1 {
         font-size: 2rem;
     }
+
     .header-container .title {
         font-size: 2rem;
         width: 70%;
     }
-    .header-container p{
+
+    .header-container p {
         width: 90%;
         margin: 1rem auto;
     }
+
     .header-container {
         margin: 20px auto;
+    }
+    /* Team work section style */
+
+    .team-work {
+        flex-direction: column;
+        gap: 2.6rem;
+        margin: 3.2rem auto;
+        width: 70%;
+    }
+    .group-image img{
+        width: 100%;
     }
 }
