@@ -252,7 +252,7 @@ nav li a {
     line-height: 26px;
 }
 
-.facts .card-container{
+.facts .card-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2.5rem;
@@ -266,14 +266,14 @@ nav li a {
     text-align: center;
 }
 
-.facts .cards h3{
+.facts .cards h3 {
     color: #424242;
     font-size: 2.8rem;
     font-weight: 600;
     margin: 0.4rem auto;
 }
 
-.facts .cards p{
+.facts .cards p {
     color: #727272;
     font-size: 1.2rem;
     font-weight: 600;
@@ -281,31 +281,41 @@ nav li a {
 
 /* Sponsors section style */
 
-.sponsors{
+.sponsors {
     margin: 6rem auto;
     width: 80%;
     text-align: center;
 }
 
-.sponsors h1{
+.sponsors h1 {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
 }
 
-.sponsors p{
+.sponsors p {
     color: #727272;
     margin: 1.5rem auto;
     line-height: 26px;
     width: 40%;
 }
 
-.sponsors .all-sponsors{
-     display: flex;
-     gap: 4rem;
-     align-items: center;
-     margin-top: 2rem;
-     justify-content: center;
+.sponsors .all-sponsors {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+/* Footer section style */
+footer {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 2rem 25%;
+    margin-bottom: 4rem;
 }
 
 
@@ -383,27 +393,31 @@ nav li a {
     .features-image p {
         font-size: 1.2rem;
     }
-    .facts .card-container{
+
+    .facts .card-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .facts .facts-content {
         width: 90%;
     }
+
     .facts {
         width: 90%;
     }
-    .sponsors{
+
+    .sponsors {
         width: 90%;
     }
-    
-    .sponsors p{
+
+    .sponsors p {
         width: 90%;
     }
-    
-    .sponsors .all-sponsors{
+
+    .sponsors .all-sponsors {
         flex-direction: column;
     }
-    
+
 }
 
 /* responsive for medium devices */
@@ -457,20 +471,24 @@ nav li a {
         margin: 2.2rem auto;
         width: 70%;
     }
-    .facts .card-container{
+
+    .facts .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .facts .facts-content {
         width: 90%;
     }
+
     .facts {
         width: 70%;
     }
-    .sponsors p{
+
+    .sponsors p {
         width: 70%;
     }
-    
-    .sponsors .all-sponsors{
+
+    .sponsors .all-sponsors {
         flex-wrap: wrap;
     }
 }
