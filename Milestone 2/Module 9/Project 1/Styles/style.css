@@ -104,6 +104,7 @@ nav li a {
     color: #727272;
     width: 45%;
     margin: 2rem auto;
+    line-height: 26px;
 }
 
 .header-container img {
@@ -147,6 +148,7 @@ nav li a {
 .work-description p {
     color: #727272;
     margin: 1.5rem auto;
+    line-height: 26px;
 }
 
 /* Features section style */
@@ -169,6 +171,7 @@ nav li a {
 .features-content p {
     color: #727272;
     margin: 1.5rem auto;
+    line-height: 26px;
 }
 
 .features-content .card {
@@ -211,19 +214,71 @@ nav li a {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.5);
 }
 
-.features-image a{
+.features-image a {
     color: white;
     font-size: 3.8rem;
     font-weight: 700;
     text-decoration: none;
 }
 
-.features-image p{
+.features-image p {
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 5px;
     color: white;
+    line-height: 26px;
 }
+
+/* Facts section style */
+
+.facts {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.facts .facts-content {
+    width: 40%;
+}
+
+.facts-content h1 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.facts-content p {
+    color: #727272;
+    margin: 1.5rem auto 2.2rem;
+    line-height: 26px;
+}
+
+.facts .card-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.facts .cards {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 2rem;
+    text-align: center;
+}
+
+.facts .cards h3{
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0.4rem auto;
+}
+
+.facts .cards p{
+    color: #727272;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 
 /* responsive for mobile devices */
 
@@ -282,21 +337,21 @@ nav li a {
         width: 90%;
     }
 
-    .features-image img{
+    .features-image img {
         width: 100%;
     }
 
-    .features-image .ten-years{
+    .features-image .ten-years {
         position: static;
         margin: 1.2rem auto;
         padding: 1.5rem;
     }
 
-    .features-image a{
+    .features-image a {
         font-size: 2.8rem;
     }
-    
-    .features-image p{
+
+    .features-image p {
         font-size: 1.2rem;
     }
 }
@@ -345,6 +400,7 @@ nav li a {
     .group-image img {
         width: 100%;
     }
+
     .features-enjoy {
         flex-direction: column-reverse;
         gap: 5.1rem;
