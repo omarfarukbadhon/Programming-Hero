@@ -417,6 +417,11 @@ footer {
     .sponsors .all-sponsors {
         flex-direction: column;
     }
+    footer {
+        width: 90%;
+        padding: 1.5rem 2%;
+        text-align: center;
+    }
 
 }
 
@@ -490,5 +495,10 @@ footer {
 
     .sponsors .all-sponsors {
         flex-wrap: wrap;
+    }
+    footer {
+        width: 70%;
+        padding: 1.5rem 5%;
+        text-align: center;
     }
 }
