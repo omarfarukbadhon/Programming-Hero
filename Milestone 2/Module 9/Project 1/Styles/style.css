@@ -360,6 +360,9 @@ nav li a {
     .facts .facts-content {
         width: 90%;
     }
+    .facts {
+        width: 90%;
+    }
 }
 
 /* responsive for medium devices */
@@ -411,6 +414,15 @@ nav li a {
         flex-direction: column-reverse;
         gap: 5.1rem;
         margin: 2.2rem auto;
+        width: 70%;
+    }
+    .facts .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .facts .facts-content {
+        width: 90%;
+    }
+    .facts {
         width: 70%;
     }
 }
