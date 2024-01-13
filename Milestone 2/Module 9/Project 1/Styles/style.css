@@ -17,6 +17,19 @@
     background: #FF900E;
     border: none;
     margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-primary:hover{
+    background-color: #d37000;
+}
+
+.btn-primary a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* Header section style */
@@ -93,16 +106,50 @@ nav li a {
     margin: 2rem auto;
 }
 
-.header-container a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
 .header-container img{
     width: 100%;
 }
+
+/* Team work section style */
+
+.team-work{
+    display: flex;
+    gap: 4.6rem;
+    margin: 5.2rem auto;
+    width: 60%;
+    align-items: center;
+}
+
+.team-work .group-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-work .work-description h1{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.work-description .quick{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.work-description .features{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.work-description p{
+    color: #727272;
+    margin: 1.5rem auto;
+}
+
+
 
 /* responsive for mobile devices */
 
