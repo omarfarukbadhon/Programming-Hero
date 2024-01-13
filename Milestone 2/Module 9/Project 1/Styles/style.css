@@ -392,6 +392,18 @@ nav li a {
     .facts {
         width: 90%;
     }
+    .sponsors{
+        width: 90%;
+    }
+    
+    .sponsors p{
+        width: 90%;
+    }
+    
+    .sponsors .all-sponsors{
+        flex-direction: column;
+    }
+    
 }
 
 /* responsive for medium devices */
