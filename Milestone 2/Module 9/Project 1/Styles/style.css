@@ -99,3 +99,40 @@ nav li a {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.header-container img{
+    width: 100%;
+}
+
+/* responsive for mobile devices */
+
+@media screen and (max-width: 576px) {
+    /* Header section style */
+
+    header {
+        padding: 25px 10px;
+    }
+
+    /* Navbar style */
+
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        gap: 1rem;
+    }
+    nav li {
+        padding: 1.2rem 0.5rem;
+    }
+    .header-container .title {
+        font-size: 1.5rem;
+        width: 60%;
+    }
+    .header-container p{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .header-container {
+        margin: 20px auto;
+    }
+}
