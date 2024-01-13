@@ -466,4 +466,11 @@ nav li a {
     .facts {
         width: 70%;
     }
+    .sponsors p{
+        width: 70%;
+    }
+    
+    .sponsors .all-sponsors{
+        flex-wrap: wrap;
+    }
 }
