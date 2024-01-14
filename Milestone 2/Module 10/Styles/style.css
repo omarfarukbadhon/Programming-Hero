@@ -29,6 +29,7 @@
 
 .btn-primary i {
     transition: all 0.5s ease-in-out;
+    color: white;
 }
 
 .btn-primary:hover i {
@@ -203,6 +204,53 @@ nav .icon i {
     font-weight: 700;
     width: 80%;
     line-height: 1.5rem;
+}
+
+.mobile-collection .bottom{
+    float: right;
+    margin-right: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.mobile-collection .bottom p, i{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1.5rem;
+}
+
+/* Features section style */
+.features{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6rem auto;
+}
+
+.features .feature-image{
+    width: 100%;
+}
+
+.features .feature-content{
+    width: 100%;
+}
+
+.feature-content h1{
+    color: #0A0826;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.feature-content p{
+    color: #6C6C6C;
+    font-weight: 600;
+    margin: 1rem auto;
+}
+
+.features button{
+    padding: 0.8rem 1.5rem;
 }
 
 /* Responsive for mobile devices */
