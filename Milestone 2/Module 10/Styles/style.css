@@ -229,7 +229,7 @@ nav .icon i {
     margin: 6rem auto;
 }
 
-.features .feature-image{
+.features .feature-image img{
     width: 100%;
 }
 
@@ -331,7 +331,10 @@ nav .icon i {
     .mobile-collection .cards {
         width: 100%;
     }
-    
+    .features{
+        flex-direction: column;
+        width: 90%;
+    }
 
 }
 
