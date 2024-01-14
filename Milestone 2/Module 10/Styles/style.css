@@ -254,3 +254,58 @@ nav .icon i {
     }
 
 }
+
+
+/* Responsive for extra middle devices */
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+
+    /* Header section style */
+
+    header {
+        background-size: 36%;
+        background-position: bottom 2.5rem right 3rem;
+        padding: 4rem 4rem;
+    }
+
+    /* Navbar section style */
+    nav h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    nav ul {
+        gap: 1.8rem;
+    }
+
+    nav li {
+        font-size: 1.3rem;
+    }
+
+    nav>div {
+        gap: 1.8rem;
+    }
+
+    nav .icon {
+        gap: 1.8rem;
+    }
+
+    /* Header content */
+
+    .header-content {
+        margin-top: 4rem;
+    }
+
+    .header-content .content {
+        width: 60%;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    /* Sponsors section style */
+    .sponsor .sponsors {
+        width: 90%;
+    }
+
+}
