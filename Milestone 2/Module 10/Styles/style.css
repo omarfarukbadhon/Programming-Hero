@@ -132,6 +132,63 @@ nav .icon i {
     margin: 1.5rem auto;
 }
 
+/* mobile collection section style */
+.mobile-collection {
+    width: 60%;
+    margin: 6rem auto;
+}
+
+.mobile-collection .cards-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mobile-collection .mobile-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+.mobile-collection .cards {
+    width: 90%;
+    padding: 1rem 0.8rem;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-collection .cards > img{
+    width: 100%;
+}
+
+.mobile-collection .cards h1{
+    color: #18191F;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.mobile-collection .cards .dollar{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+}
+
+.mobile-collection .cards .rating{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+.mobile-collection .cards .description{
+    color: #787885;
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 80%;
+    line-height: 1.5rem;
+}
 
 /* Responsive for mobile devices */
 @media screen and (max-width: 576px) {
@@ -192,7 +249,7 @@ nav .icon i {
 
     /* Sponsors section style */
     .sponsor .sponsors {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 2rem;
         padding: 1.3rem 0;
         width: 60%;
