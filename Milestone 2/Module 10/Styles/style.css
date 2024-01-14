@@ -9,16 +9,6 @@
     box-sizing: border-box;
 }
 
-/* Header section style */
-
-header {
-    background-image: url('../images/Circle\ design.svg');
-    background-repeat: no-repeat;
-    background-size: 25%;
-    background-position: bottom 2.7rem right 9rem;
-    padding: 4rem 10rem;
-}
-
 :root {
     --header-color: #3A3A3A;
 }
@@ -48,6 +38,16 @@ header {
 
 .btn-primary:hover {
     background: #d3004d;
+}
+
+/* Header section style */
+
+header {
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: bottom 2.7rem right 9rem;
+    padding: 4rem 10rem;
 }
 
 /* Navbar section style */
@@ -196,6 +196,61 @@ nav .icon i {
         gap: 2rem;
         padding: 1.3rem 0;
         width: 60%;
+    }
+
+}
+
+
+/* Responsive for middle devices */
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+
+    /* Header section style */
+
+    header {
+        background-size: 40%;
+        background-position: bottom 5.3rem right 4.1rem;
+        padding: 4rem 2rem;
+    }
+
+    /* Navbar section style */
+    nav h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    nav ul {
+        gap: 1.8rem;
+    }
+
+    nav li {
+        font-size: 1.3rem;
+    }
+
+    nav>div {
+        gap: 1.8rem;
+    }
+
+    nav .icon {
+        gap: 1.8rem;
+    }
+
+    /* Header content */
+
+    .header-content {
+        margin-top: 4rem;
+    }
+
+    .header-content .content {
+        width: 60%;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    /* Sponsors section style */
+    .sponsor .sponsors {
+        width: 90%;
     }
 
 }
