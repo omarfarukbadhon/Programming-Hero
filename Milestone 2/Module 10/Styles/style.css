@@ -399,6 +399,22 @@ nav .icon i {
     .mobile-collection .cards h1{
         font-size: 1.5rem;
     }
+    .features{
+        width: 90%;
+        gap: 5rem;
+    }
+    .feature-content h1{
+        font-size: 1.7rem;
+    }
+    
+    .feature-content p{
+        margin: 0.6rem 0;
+        width: 80%;
+    }
+    
+    .features button{
+        padding: 0.5rem 1.5rem;
+    }
 
 }
 
@@ -457,6 +473,18 @@ nav .icon i {
 
     .mobile-collection {
         width: 90%;
+    }
+    .features{
+        width: 90%;
+        gap: 4rem;
+    }
+    .feature-content h1{
+        font-size: 2rem;
+    }
+    
+    .feature-content p{
+        margin: 0.6rem 0;
+        width: 80%;
     }
 
 }
