@@ -339,6 +339,15 @@ nav .icon i {
     .sponsor .sponsors {
         width: 90%;
     }
+    .mobile-collection {
+        width: 90%;
+    }
+    .mobile-collection .cards {
+        width: 90%;
+    }
+    .mobile-collection .cards h1{
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -392,6 +401,10 @@ nav .icon i {
 
     /* Sponsors section style */
     .sponsor .sponsors {
+        width: 90%;
+    }
+
+    .mobile-collection {
         width: 90%;
     }
 
