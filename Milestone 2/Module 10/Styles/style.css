@@ -121,6 +121,18 @@ nav .icon i {
     margin: 1.2rem auto;
 }
 
+/* Sponsors section style */
+.sponsor .sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.3rem 0.5rem;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    width: 70%;
+    margin: 1.5rem auto;
+}
+
 
 /* Responsive for mobile devices */
 @media screen and (max-width: 576px) {
