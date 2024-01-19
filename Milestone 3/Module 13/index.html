@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model</title>
+    <!-- Integrate Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Style of font -->
+    <style>
+        .font-mono-space {
+            font-family: 'Space Mono', monospace;
+        }
+
+        .font-baskerville {
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .font-arial {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .font-open-sans {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="px-1 xl:px-52 2xl:px-64">
+            <div class="navbar">
+                <div class="navbar-start lg:w-[30%]">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl">
+                            <li><a>Home</a></li>
+                            <li><a>Features</a></li>
+                            <li><a>Pricing</a></li>
+                            <li>
+                                <a>Other</a>
+                                <ul class="p-2">
+                                    <li><a>Article</a></li>
+                                    <li><a>Terms and Conditions</a></li>
+                                    <li><a>Privacy</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Download</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-3xl font-mono">SpaceX</a>
+                </div>
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl">
+                        <li><a>Home</a></li>
+                        <li><a>Features</a></li>
+                        <li><a>Pricing</a></li>
+                        <li>
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Article</a></li>
+                                    <li><a>Terms and Conditions</a></li>
+                                    <li><a>Privacy</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Download</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex-none lg:flex gap-2">
+                        <div class="form-control hidden lg:flex">
+                            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                                <div class="w-10 rounded-full">
+                                    <img alt="Tailwind CSS Navbar component"
+                                        src="images/testimonial-4.jpg" />
+                                </div>
+                            </div>
+                            <ul tabindex="0"
+                                class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                <li>
+                                    <a class="justify-between">
+                                        Profile
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
