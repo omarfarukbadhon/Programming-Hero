@@ -15,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,900&display=swap"
         rel="stylesheet">
+    <!-- Icon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Internal CSS -->
     <style>
         .open-sans {
@@ -140,39 +142,45 @@
         </nav>
         <div class="hero" style="background-image: url(images/hero-img.jpg);">
             <div class="hero-overlay bg-opacity-10"></div>
-            <div class="hero-content text-neutral-content grid grid-cols-1 gap-6 lg:grid-cols-2  justify-between lg:py-24 py-6">
+            <div
+                class="hero-content text-neutral-content grid grid-cols-1 gap-6 lg:grid-cols-2  justify-between lg:py-24 py-6">
                 <div class="max-w-md order-last lg:order-first">
                     <h1 class="mb-5 text-2xl font-bold text-[#FFB525]">100% Organic Foods</h1>
-                    <p class="mb-5 text-5xl text-[#81C408] leading-normal font-extrabold">Organic Veggies & Fruits Foods</p>
+                    <p class="mb-5 text-5xl text-[#81C408] leading-normal font-extrabold">Organic Veggies & Fruits Foods
+                    </p>
                     <div class="flex">
                         <input type="text" placeholder="Type here"
                             class="input input-bordered input-primary w-full max-w-xs h-16 border-2 border-[#FFB525] rounded-r-none border-r-0 rounded-l-full bg-white text-black" />
-                        <button class="btn btn-success -ml-7 h-16 rounded-full border-2 border-[#FFB525] text-xl text-white bg-[#81C408] hover:bg-[#FFB525] hover:border-[#FFB525]  transition-all duration-400 ">Submit Now</button>
+                        <button
+                            class="btn btn-success -ml-7 h-16 rounded-full border-2 border-[#FFB525] text-xl text-white bg-[#81C408] hover:bg-[#FFB525] hover:border-[#FFB525]  transition-all duration-400 ">Submit
+                            Now</button>
                     </div>
                 </div>
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
                         <div class="card w-full  col-start-1 row-start-1">
-                            <figure><img src="images/hero-img-1.png"
-                                    alt="Shoes" class="rounded-3xl"/></figure>
-                            <div class="card-body px-6 py-3 bg-[#FFB525] bg-opacity-65 rounded-3xl absolute transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2">
+                            <figure><img src="images/hero-img-1.png" alt="Shoes" class="rounded-3xl" /></figure>
+                            <div
+                                class="card-body px-6 py-3 bg-[#FFB525] bg-opacity-65 rounded-3xl absolute transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2">
                                 <h2 class="card-title text-white text-4xl font-semibold">Fruits</h2>
                             </div>
                         </div>
-                        <div class="absolute flex justify-between z-10 transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <div
+                            class="absolute flex justify-between z-10 transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide4" class="btn btn-circle">❮</a>
                             <a href="#slide4" class="btn btn-circle">❯</a>
                         </div>
                     </div>
                     <div id="slide4" class="carousel-item relative w-full">
                         <div class="card w-full col-start-1 row-start-1">
-                            <figure><img src="images/hero-img-2.jpg"
-                                    alt="Shoes" class="rounded-3xl"/></figure>
-                            <div class="card-body px-6 py-3 bg-[#FFB525] bg-opacity-65 rounded-3xl absolute transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2">
+                            <figure><img src="images/hero-img-2.jpg" alt="Shoes" class="rounded-3xl" /></figure>
+                            <div
+                                class="card-body px-6 py-3 bg-[#FFB525] bg-opacity-65 rounded-3xl absolute transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2">
                                 <h2 class="card-title text-white text-4xl font-semibold">Vegetable</h2>
                             </div>
                         </div>
-                        <div class="absolute flex justify-between z-10 transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <div
+                            class="absolute flex justify-between z-10 transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide1" class="btn btn-circle">❮</a>
                             <a href="#slide1" class="btn btn-circle">❯</a>
                         </div>
@@ -181,6 +189,53 @@
             </div>
         </div>
     </header>
+    <main class="bg-white">
+        <!-- Facilities of delivery -->
+        <section class="lg:w-3/4 w-[90%] xl:w-[90%] 2xl:w-3/4 mx-auto my-36">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+                <div class="card w-full bg-slate-100 shadow-xl pt-10">
+                    <figure class="p-5 w-[28%] mx-auto bg-[#FFB525] rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="m20.772 10.155-1.368-4.104A2.995 2.995 0 0 0 16.559 4H7.441a2.995 2.995 0 0 0-2.845 2.051l-1.368 4.104A2 2 0 0 0 2 12v5c0 .738.404 1.376 1 1.723V21a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2h12v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2.277A1.99 1.99 0 0 0 22 17v-5a2 2 0 0 0-1.228-1.845zM7.441 6h9.117c.431 0 .813.274.949.684L18.613 10H5.387l1.105-3.316A1 1 0 0 1 7.441 6zM5.5 16a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 5.5 16zm13 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18.5 16z"></path></svg>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl text-black">Free Shipping</h2>
+                        <p class="text-xl mx-auto w-full text-gray-400">Free on order over $300</p>
+                    </div>
+                </div>
+                <div class="card w-full bg-slate-100 shadow-xl pt-10">
+                    <figure class="p-5 w-[28%] mx-auto bg-[#FFB525] rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="50" height="50">
+                            <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                          </svg>                          
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl text-black">Security Payment</h2>
+                        <p class="text-xl mx-auto w-full text-gray-400">100% security payment</p>
+                    </div>
+                </div>
+                <div class="card w-full bg-slate-100 shadow-xl pt-10">
+                    <figure class="p-5 w-[28%] mx-auto bg-[#FFB525] rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="50" height="50">
+                            <path fill-rule="evenodd" d="M15.97 2.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H7.5a.75.75 0 0 1 0-1.5h11.69l-3.22-3.22a.75.75 0 0 1 0-1.06Zm-7.94 9a.75.75 0 0 1 0 1.06l-3.22 3.22H16.5a.75.75 0 0 1 0 1.5H4.81l3.22 3.22a.75.75 0 1 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06l4.5-4.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                          </svg>                          
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl text-black">30 Day Return</h2>
+                        <p class="text-xl mx-auto w-full text-gray-400">30 day money guarantee</p>
+                    </div>
+                </div>
+                <div class="card w-full bg-slate-100 shadow-xl pt-10">
+                    <figure class="p-5 w-[28%] mx-auto bg-[#FFB525] rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path></svg>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl text-black">24/7 Support</h2>
+                        <p class="text-xl mx-auto w-full text-gray-400">Support every time fast</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
