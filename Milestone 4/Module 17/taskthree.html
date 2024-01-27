@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Three</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <p class="text-4xl font-bold text-center my-6">Input Your all Subjects marks</p><br>
+    <div class=" w-fit mx-auto grid grid-cols-2 gap-6 justify-center items-center">
+        <div>
+            Bangla:
+            <input type="text" placeholder="Type your Bangla Mark" id="Bangla"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <div>
+            English:
+            <input type="text" placeholder="Type your English Mark" id="English"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <div>
+            Math:
+            <input type="text" placeholder="Type your Math Mark" id="Math"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <div>
+            Physics:
+            <input type="text" placeholder="Type your Physics Mark" id="Physics"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <div>
+            Chemistry:
+            <input type="text" placeholder="Type your Chemistry Mark" id="Chemistry"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <div>
+            Biology:
+            <input type="text" placeholder="Type your Biology Mark" id="Biology"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+        <div class="mt-4 col-span-2 mx-auto">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onclick="GenerateMarkSheet()">Generate
+                MarkSheet</button>
+        </div>
+        <div class="col-span-2 mt-4 hidden" id="table">
+            <div class="overflow-x-auto">
+                <table class="table table-zebra">
+                    <caption class="text-3xl font-semibold">Mark Sheet</caption>
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                            <th>1</th>
+                            <td>Bangla</td>
+                            <td id="MarkBangla"> </td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <th>2</th>
+                            <td>English</td>
+                            <td id="MarkEnglish"></td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                            <th>3</th>
+                            <td>Math</td>
+                            <td id="MarkMath"></td>
+                        </tr>
+                        <!-- row 4 -->
+                        <tr>
+                            <th>4</th>
+                            <td>Physics</td>
+                            <td id="MarkPhysics"></td>
+                        </tr>
+                        <!-- row 5 -->
+                        <tr>
+                            <th>5</th>
+                            <td>Chemistry</td>
+                            <td id="MarkChemistry"></td>
+                        </tr>
+                        <!-- row 6 -->
+                        <tr>
+                            <th>6</th>
+                            <td>Biology</td>
+                            <td id="MarkBiology"></td>
+                        </tr>
+                        <!-- row 7 -->
+                        <tr>
+                            <th></th>
+                            <td class="text-xl font-semibold">You Got</td>
+                            <td id="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function GenerateMarkSheet() {
+            let Bangla = document.getElementById('Bangla').value;
+            let English = document.getElementById('English').value;
+            let Math = document.getElementById('Math').value;
+            let Physics = document.getElementById('Physics').value;
+            let Chemistry = document.getElementById('Chemistry').value;
+            let Biology = document.getElementById('Biology').value;
+            let total = parseInt(Bangla) + parseInt(English) + parseInt(Math) + parseInt(Physics) + parseInt(Chemistry) + parseInt(Biology);
+            // Total Grade
+            if (total >= 480 && total <= 600) {
+                document.getElementById('total').innerHTML = '5.00';
+                document.getElementById('table').style.display = 'block';
+            } else {
+                document.getElementById('total').innerHTML = (total / 96).toFixed(2);
+                document.getElementById('table').style.display = 'block';
+            }
+            // Bangla Grade
+            if (Bangla >= 80 && Bangla <= 100) {
+                document.getElementById('MarkBangla').innerHTML = "A+";
+                document.getElementById('table').style.display = 'block';
+            }else if(Bangla >= 70 && Bangla <= 79){
+                document.getElementById('MarkBangla').innerHTML = "A";
+                document.getElementById('table').style.display = 'block';
+            }else if(Bangla >= 60 && Bangla <= 69){
+                document.getElementById('MarkBangla').innerHTML = "B";
+                document.getElementById('table').style.display = 'block';
+            }else if(Bangla >= 50 && Bangla <= 59){
+                document.getElementById('MarkBangla').innerHTML = "C";
+                document.getElementById('table').style.display = 'block';
+            }else if(Bangla <= 49){
+                document.getElementById('MarkBangla').innerHTML = "F";
+                document.getElementById('table').style.display = 'block';
+            }else{
+                document.getElementById('MarkBangla').innerHTML = "Invalid Number";
+                document.getElementById('table').style.display = 'block';
+            }
+            // English Grade
+            if (English >= 80 && English <= 100) {
+                document.getElementById('MarkEnglish').innerHTML = "A+";
+                document.getElementById('table').style.display = 'block';
+            }else if(English >= 70 && English <= 79){
+                document.getElementById('MarkEnglish').innerHTML = "A";
+                document.getElementById('table').style.display = 'block';
+            }else if(English >= 60 && English <= 69){
+                document.getElementById('MarkEnglish').innerHTML = "B";
+                document.getElementById('table').style.display = 'block';
+            }else if(English >= 50 && English <= 59){
+                document.getElementById('MarkEnglish').innerHTML = "C";
+                document.getElementById('table').style.display = 'block';
+            }else if(English <= 49){
+                document.getElementById('MarkEnglish').innerHTML = "F";
+                document.getElementById('table').style.display = 'block';
+            }else{
+                document.getElementById('MarkEnglish').innerHTML = "Invalid Number";
+                document.getElementById('table').style.display = 'block';
+            }
+            // Math Grade
+            if (Math >= 80 && Math <= 100) {
+                document.getElementById('MarkMath').innerHTML = "A+";
+                document.getElementById('table').style.display = 'block';
+            }else if(Math >= 70 && Math <= 79){
+                document.getElementById('MarkMath').innerHTML = "A";
+                document.getElementById('table').style.display = 'block';
+            }else if(Math >= 60 && Math <= 69){
+                document.getElementById('MarkMath').innerHTML = "B";
+                document.getElementById('table').style.display = 'block';
+            }else if(Math >= 50 && Math <= 59){
+                document.getElementById('MarkMath').innerHTML = "C";
+                document.getElementById('table').style.display = 'block';
+            }else if(Math <= 49){
+                document.getElementById('MarkMath').innerHTML = "F";
+                document.getElementById('table').style.display = 'block';
+            }else{
+                document.getElementById('MarkMath').innerHTML = "Invalid Number";
+                document.getElementById('table').style.display = 'block';
+            }
+            // Physics Grade
+            if (Physics >= 80 && Physics <= 100) {
+                document.getElementById('MarkPhysics').innerHTML = "A+";
+                document.getElementById('table').style.display = 'block';
+            }else if(Physics >= 70 && Physics <= 79){
+                document.getElementById('MarkPhysics').innerHTML = "A";
+                document.getElementById('table').style.display = 'block';
+            }else if(Physics >= 60 && Physics <= 69){
+                document.getElementById('MarkPhysics').innerHTML = "B";
+                document.getElementById('table').style.display = 'block';
+            }else if(Physics >= 50 && Physics <= 59){
+                document.getElementById('MarkPhysics').innerHTML = "C";
+                document.getElementById('table').style.display = 'block';
+            }else if(Physics <= 49){
+                document.getElementById('MarkPhysics').innerHTML = "F";
+                document.getElementById('table').style.display = 'block';
+            }else{
+                document.getElementById('MarkPhysics').innerHTML = "Invalid Number";
+                document.getElementById('table').style.display = 'block';
+            }
+            // Chemistry Grade
+            if (Chemistry >= 80 && Chemistry <= 100) {
+                document.getElementById('MarkChemistry').innerHTML = "A+";
+                document.getElementById('table').style.display = 'block';
+            }else if(Chemistry >= 70 && Chemistry <= 79){
+                document.getElementById('MarkChemistry').innerHTML = "A";
+                document.getElementById('table').style.display = 'block';
+            }else if(Chemistry >= 60 && Chemistry <= 69){
+                document.getElementById('MarkChemistry').innerHTML = "B";
+                document.getElementById('table').style.display = 'block';
+            }else if(Chemistry >= 50 && Chemistry <= 59){
+                document.getElementById('MarkChemistry').innerHTML = "C";
+                document.getElementById('table').style.display = 'block';
+            }else if(Chemistry <= 49){
+                document.getElementById('MarkChemistry').innerHTML = "F";
+                document.getElementById('table').style.display = 'block';
+            }else{
+                document.getElementById('MarkChemistry').innerHTML = "Invalid Number";
+                document.getElementById('table').style.display = 'block';
+            }
+            // Biology Grade
+            if (Biology >= 80 && Biology <= 100) {
+                document.getElementById('MarkBiology').innerHTML = "A+";
+                document.getElementById('table').style.display = 'block';
+            }else if(Biology >= 70 && Biology <= 79){
+                document.getElementById('MarkBiology').innerHTML = "A";
+                document.getElementById('table').style.display = 'block';
+            }else if(Biology >= 60 && Biology <= 69){
+                document.getElementById('MarkBiology').innerHTML = "B";
+                document.getElementById('table').style.display = 'block';
+            }else if(Biology >= 50 && Biology <= 59){
+                document.getElementById('MarkBiology').innerHTML = "C";
+                document.getElementById('table').style.display = 'block';
+            }else if(Biology <= 49){
+                document.getElementById('MarkBiology').innerHTML = "F";
+                document.getElementById('table').style.display = 'block';
+            }else{
+                document.getElementById('MarkBiology').innerHTML = "Invalid Number";
+                document.getElementById('table').style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
