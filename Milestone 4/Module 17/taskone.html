@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One</title>
+</head>
+<body>
+    <fieldset>
+        What is the price of the burger: 
+        <input type="text" name="burger" id="burgerPrice"><br><br>
+        <input type="button" value="Buy" onclick="burger()">
+        <p id="text"></p>
+    </fieldset>
+    <div>
+        <img src="drinks.jpg" alt="" id="drinks" style="display: none; margin: 40px 80px;" width="300px" height="400px">
+        <img src="pay drinks.jpg" alt="" id="pay" style="display: none; margin: 40px 80px;" width="300px" height="300px">
+    </div>
+    
+    <script>
+        function burger(){
+            let priceOfBurger = document.getElementById('burgerPrice').value;
+            let para = document.getElementById('text');
+            const drinks = document.getElementById('drinks');
+            const pay = document.getElementById('pay');
+            if(priceOfBurger > 500){
+                para.textContent = "You can get a Free Drinks";
+                drinks.style.display = "block";
+            }else{
+                para.textContent = "Please pay 30tk for drinks";
+                pay.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
