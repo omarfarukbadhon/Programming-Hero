@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Four</title>
+    <title>Even Number</title>
 </head>
+
 <body>
-    
+    <fieldset>
+        <legend>Even Number</legend>
+        Give Your range to find out the even Number:
+        <input type="text" id="even"><br><br>
+        <input type="button" value="Generate Even numbers" onclick="evenNumber()">
+        <p>Your Even Number in the range of <span id="range"></span> is: <span id="evenNumberList"></span></p>
+    </fieldset>
+    <script>
+        function evenNumber(){
+            let rangeNumber = parseInt(document.getElementById('even').value);
+            let listNumber = [];
+            for (let i = 0; i<=rangeNumber;i++){
+                listNumber.push(i);
+            }
+            let listEvenNumber = [];
+            for(let i = 0; i<=listNumber.length; i++){
+                if(listNumber[i]%2 == 0){
+                    listEvenNumber.push(listNumber[i]);
+                }
+            }
+            document.getElementById('range').innerHTML = rangeNumber;
+            document.getElementById('evenNumberList').innerHTML = listEvenNumber;
+        }
+    </script>
 </body>
+
 </html>
