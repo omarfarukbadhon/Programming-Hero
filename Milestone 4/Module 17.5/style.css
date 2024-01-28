@@ -10,8 +10,8 @@
 }
 
 fieldset{
-    width: 50%;
-    height: 90vh;
+    width: 45%;
+    height: 25vh;
     margin: 20px auto;
     padding: 1.5rem 3rem;
 }
@@ -46,9 +46,15 @@ p{
     margin: 2rem auto;
 }
 
+span{
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 1rem;
+}
+
 div{
     position: relative;
     width: fit-content;
+    display: none;
 }
 
 div img{
