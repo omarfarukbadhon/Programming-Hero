@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Season Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <fieldset>
         <legend>Season Finder</legend>
-        What is the month 
+        What is the month in your Location:
+        <input type="text" id="month">
+        <input type="button" value="Season" onclick="season()">
+        <p>Present Season in your Location is: <span id="Season"></span></p>
+        <div>
+            <h1>Autumn</h1>
+            <img src="Images/Autumn.jpg" alt="Autumn">
+        </div>
     </fieldset>
+    <script>
+        function season() {
+            let month = document.getElementById('month').value;
+            switch (month) {
+                case "December":
+                case "January":
+                case "February":
+                    document.getElementById('Season').innerHTML = "Winter";
+                    break;
+                case "March":
+                case "April":
+                case "May":
+                    document.getElementById('Season').innerHTML = "Spring";
+                    break;
+                case "June":
+                case "July":
+                case "August":
+                    document.getElementById('Season').innerHTML = "Summer";
+                    break;
+                case "September":
+                case "October":
+                case "November":
+                    document.getElementById('Season').innerHTML = "Autumn";
+                    break;
+                default:
+                    document.getElementById('Season').innerHTML = "Invalid Month! Please Check your Month";
+                    break;
+            }
+        }
+    </script>
 </body>
+
 </html>
