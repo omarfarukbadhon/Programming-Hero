@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        What number multiplication table you want:
+        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" id="number"/><br><br>
+        <button class="btn" id="button" onclick="generateTable()">Generate Multiplication Table</button>
+    </div>
+    <div class="overflow-x-auto hidden" id="table">
+        <table class="table">
+            <caption>Multiplication Table of <span id="numberOfMultiplication"></span></caption>
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th>Multiplication</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- row 1 -->
+                <tr>
+                    <td>1 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                    <td>2 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                    <td>3 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                    <td>4 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 5 -->
+                <tr>
+                    <td>5 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 6 -->
+                <tr>
+                    <td>6 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 7 -->
+                <tr>
+                    <td>7 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 8 -->
+                <tr>
+                    <td>8 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 9 -->
+                <tr>
+                    <td>9 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+                <!-- row 10 -->
+                <tr>
+                    <td>10 * <span id="numberOfMultiplication"></span></td>
+                    <td id="multiplication"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function generateTable(){
+            let numberOfMultiplication = document.getElementById('number').value;
+            document.getElementById('numberOfMultiplication').innerHTML = numberOfMultiplication;
+            let listNumber = [];
+            for(let i=1; i<=10; i++){
+                listNumber.push(i);
+            }
+            for(let i =1; i<=listNumber.length;i++){
+                document.getElementById('multiplication').innerHTML = listNumber[i]*numberOfMultiplication;
+                
+            }
+            document.getElementById('table').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
