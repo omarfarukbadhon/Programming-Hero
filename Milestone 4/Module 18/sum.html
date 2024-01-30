@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odd or Even Number</title>
+    <title>Sum of Odd or Even Number</title>
     <style>
         fieldset{
             width: 50%;
@@ -45,7 +45,7 @@
         Range of your End number:
         <input type="number" name="number" id="end-range"><br><br>
         <input type="button" value="Generate" onclick="Generate()">
-        <p>Your <span id="choice"></span> Number is: <span id="oddEven"></span></p>
+        <p>Your <span id="choice"></span> Number Sum is: <span id="sum"></span></p>
     </fieldset>
 
     <script>
@@ -55,10 +55,12 @@
             let firstRange = parseInt(document.getElementById('first-range').value);
             let endRange = parseInt(document.getElementById('end-range').value);
             let oddEven = [];
+            let sum = 0;
             if(choice == 'even'){
                 for(firstRange; firstRange<=endRange; firstRange++){
                     if(firstRange % 2 === 0){
                         oddEven.push(firstRange);
+                        sum += firstRange;
                     }
                 }
             }
@@ -66,10 +68,11 @@
                 for(firstRange; firstRange<=endRange; firstRange++){
                     if(firstRange % 2 !== 0){
                         oddEven.push(firstRange);
+                        sum += firstRange;
                     }
                 }
             }
-            document.getElementById('oddEven').innerHTML = oddEven;
+            document.getElementById('sum').innerHTML = sum;
         }
     </script>
 </body>
