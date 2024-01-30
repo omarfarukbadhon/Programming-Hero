@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <style>
+        fieldset {
+            width: 50%;
+            margin: 10rem auto;
+            padding: 2rem;
+            font-size: 2rem;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        input[type="number"] {
+            height: 2rem;
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem;
+            border-radius: 1.5rem;
+        }
+
+        input[type="button"] {
+            font-size: 1.8rem;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            border-radius: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>CountDown Number</legend>
+        From Which number u wanna start:
+        <input type="number" id="start" placeholder="Start Number"><br><br>
+        And the ending Number:
+        <input type="number" name="number" id="end" placeholder="End Number"><br><br>
+        <!-- Range of your End number:
+        <input type="number" name="number" id="end-range"><br><br> -->
+        <input type="button" value="Start CountDown" onclick="count()">
+        <p><span id="CountDown"></span></p>
+    </fieldset>
+    <script>
+        function count() {
+            let start = parseInt(document.getElementById('start').value);
+            let end = parseInt(document.getElementById('end').value);
+            for (start; start <= end; start++) {
+                (function (start) {
+                    setTimeout(function () {
+                        CountDown.innerText = start;
+                    }, (count - start) * 1000); // Increase the timeout for each iteration
+                })(start);
+            }
+        }
+        count();
+    </script>
+</body>
+
+</html>
+
+
