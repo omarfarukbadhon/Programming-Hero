@@ -9,3 +9,4 @@ for (const aNumber of sentence){
 }
 
 console.log(count);
+
