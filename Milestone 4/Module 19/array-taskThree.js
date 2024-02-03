@@ -1,4 +1,4 @@
-const sentence = "aniuaimese";
+const sentence = "Count how many times a string has the letter";
 
 let count = 0;
 let sentenceVowels = [];
